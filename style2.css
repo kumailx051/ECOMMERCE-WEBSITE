@@ -1,0 +1,40 @@
+.slick-slide {
+  margin: 0px 10px; /* Decreased margin for smaller screens */
+}
+
+.customer-logos {
+  overflow: hidden; /* Changed to hidden to prevent horizontal scroll */
+  border-top: 1px solid #353535;
+  border-bottom: 1px solid #353535;
+  margin-top: 16px; /* Adjusted margin for responsiveness */
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  background: url(https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/arrow.svg?sanitize=true) center no-repeat;
+  color: #fff;
+  filter: invert(77%) sepia(32%) saturate(1%) hue-rotate(344deg) brightness(105%) contrast(103%);
+  border: none;
+  width: 1rem; /* Adjusted arrow size for smaller screens */
+  height: 1rem; /* Adjusted arrow size for smaller screens */
+  text-indent: -10000px;
+  margin-top: -8px; /* Adjusted margin for arrow alignment */
+  z-index: 99;
+}
+
+.slick-arrow.slick-next {
+  right: -20px; /* Adjusted position for smaller screens */
+  transform: rotate(180deg);
+}
+
+.slick-arrow.slick-prev {
+  left: -20px; /* Adjusted position for smaller screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .slick-slide {
+    margin: 0px 5px; /* Further decreased margin for smaller screens */
+  }
+}
